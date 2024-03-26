@@ -5,185 +5,291 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <div class="grid-container">
       <!--flex box-->
       <div id="sidebar">
-        <h1>Dashboard</h1>
+        <div id="dashsec">
+          <img src=".\img\view-dashboard.svg" alt="tablet" class="logo" />
+          <h1>Dashboard</h1>
+        </div>
 
         <div>
-          <ul id="high">
-            <li><img src="" alt="house" id="logo" /><a href="#">Home</a></li>
-            <li><img src="" alt="card" id="logo" /><a href="#">Profile</a></li>
-            <li>
-              <img src="" alt="bubble" id="logo" /><a href="#">Messages</a>
-            </li>
-            <li><img src="" alt="clock" id="logo" /><a href="#">History</a></li>
-            <li><img src="" alt="pages" id="logo" /><a href="#">Tasks</a></li>
-            <li>
-              <img src="" alt="men" id="logo" /><a href="#">Communities</a>
-            </li>
-          </ul>
-          <ul id="low">
-            <li><img src="" alt="cog" id="logo" /><a href="#">Settings</a></li>
-            <li><img src="" alt="huh?" id="logo" /><a href="#">Support</a></li>
-            <li>
-              <img src="" alt="secure" id="logo" /><a href="#">Privacy</a>
-            </li>
-          </ul>
+          <img src="./img/home.svg" alt="house" class="logo" />
+          <p><a href="#">Home</a></p>
+          <img
+            src="./img/card-account-details-outline.svg"
+            alt="card"
+            class="logo"
+          />
+          <p><a href="#">Profile</a></p>
+
+          <img src="./img/message-reply.svg" alt="bubble" class="logo" />
+          <p><a href="#">Messages</a></p>
+
+          <img src="./img/clock-time-three.svg" alt="clock" class="logo" />
+          <p><a href="#">History</a></p>
+          <img src="./img/note-multiple.svg" alt="pages" class="logo" />
+          <p><a href="#">Tasks</a></p>
+
+          <img src="./img/account-group.svg" alt="men" class="logo" />
+          <p><a href="#">Communities</a></p>
+        </div>
+        <div>
+          <img src="./img/cog.svg" alt="cog" class="logo" />
+          <p><a href="#">Settings</a></p>
+          <img src="./img/help-box.svg" alt="huh?" class="logo" />
+          <p><a href="#">Support</a></p>
+          <img src="./img/shield-check.svg" alt="secure" class="logo" />
+          <p><a href="#">Privacy</a></p>
         </div>
       </div>
       <!--subgrid-->
       <div class="rightside">
         <div id="header">
-          <form action="Get">
-            <div id="search">
-              <img src="" alt="search" id="logo" />
-              <input type="text" id="searchbox" />
-            </div>
-          </form>
+          <div id="search">
+            <img src="./img/magnify.svg" alt="search" class="logo" />
+            <input type="text" id="searchbox" />
+          </div>
+
           <div id="notifysec">
-            <img src="" alt="Bell" />
-            <img src="" alt="User-pic" />
+            <img class="logo" src="./img/bell-ring-outline.svg" alt="Bell" />
+            <img
+              id="trend-icon"
+              src="./img/incognito-circle.svg"
+              alt="User-pic"
+            />
             <p>User Name</p>
           </div>
 
           <div id="namesec">
-            <img src="" alt="User-pic-big" /> Hi there,
-            <h1>User Name (@usertag)</h1>
+            <img
+              id="profile-pic"
+              src="./img/incognito-circle.svg"
+              alt="User-pic-big"
+            />
+            <div id="hi-sec">
+              <p>Hi there,</p>
+              <p>User Name (@usertag)</p>
+            </div>
           </div>
           <div id="buttonsec">
-            <label for="new"
-              ><a href=""><button id="button" type="new">New</button></a></label
-            >
-            <label for="upload"
-              ><a href=""
-                ><button id="button" type="upload">Upload</button></a
-              ></label
-            >
-            <label for="share"
-              ><a href=""
-                ><button id="button" type="share">Share</button></a
-              ></label
-            >
+            <a href=""><button id="button" type="new">New</button></a>
+            <a href=""><button id="button" type="upload">Upload</button></a>
+            <a href=""><button id="button" type="share">Share</button></a>
           </div>
         </div>
 
         <!--subgrid-->
         <div id="main">
-          Your Projects
-          <div id="box">
-            <h3>Heading</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-              <img src="" alt="star" /><img src="" alt="eye" /><img
-                src=""
-                alt="share"
-              />
-            </p>
+          <h2 class="projects-title">Your Projects</h2>
+          <h2 class="announcements-title">Announcements</h2>
+          <div id="article">
+            <div id="box">
+              <h3 id="box-head">Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip
+              </p>
+              <div id="op-buttons">
+                <img
+                  src="./img/star-plus-outline.svg"
+                  alt="star"
+                  class="logo"
+                />
+                <img src="./img/eye-plus-outline.svg" alt="eye" class="logo" />
+                <img
+                  src="./img/share-variant-outline.svg"
+                  alt="share"
+                  class="logo"
+                />
+              </div>
+            </div>
+            <div id="box">
+              <h3 id="box-head">Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip
+              </p>
+              <div id="op-buttons">
+                <img
+                  src="./img/star-plus-outline.svg"
+                  alt="star"
+                  class="logo"
+                />
+                <img src="./img/eye-plus-outline.svg" alt="eye" class="logo" />
+                <img
+                  src="./img/share-variant-outline.svg"
+                  alt="share"
+                  class="logo"
+                />
+              </div>
+            </div>
+            <div id="box">
+              <h3 id="box-head">Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip
+              </p>
+              <div id="op-buttons">
+                <img
+                  src="./img/star-plus-outline.svg"
+                  alt="star"
+                  class="logo"
+                />
+                <img src="./img/eye-plus-outline.svg" alt="eye" class="logo" />
+                <img
+                  src="./img/share-variant-outline.svg"
+                  alt="share"
+                  class="logo"
+                />
+              </div>
+            </div>
+            <div id="box">
+              <h3 id="box-head">Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip
+              </p>
+              <div id="op-buttons">
+                <img
+                  src="./img/star-plus-outline.svg"
+                  alt="star"
+                  class="logo"
+                />
+                <img src="./img/eye-plus-outline.svg" alt="eye" class="logo" />
+                <img
+                  src="./img/share-variant-outline.svg"
+                  alt="share"
+                  class="logo"
+                />
+              </div>
+            </div>
+            <div id="box">
+              <h3 id="box-head">Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip
+              </p>
+              <div id="op-buttons">
+                <img
+                  src="./img/star-plus-outline.svg"
+                  alt="star"
+                  class="logo"
+                />
+                <img src="./img/eye-plus-outline.svg" alt="eye" class="logo" />
+                <img
+                  src="./img/share-variant-outline.svg"
+                  alt="share"
+                  class="logo"
+                />
+              </div>
+            </div>
+
+            <div id="box">
+              <h3 id="box-head">Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip
+              </p>
+              <div id="op-buttons">
+                <img
+                  src="./img/star-plus-outline.svg"
+                  alt="star"
+                  class="logo"
+                />
+                <img src="./img/eye-plus-outline.svg" alt="eye" class="logo" />
+                <img
+                  src="./img/share-variant-outline.svg"
+                  alt="share"
+                  class="logo"
+                />
+              </div>
+            </div>
           </div>
-          <div id="box">
-            <h3>Heading</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-              <img src="" alt="star" /><img src="" alt="eye" /><img
-                src=""
-                alt="share"
-              />
-            </p>
-          </div>
-          <div id="box">
-            <h3>Heading</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-              <img src="" alt="star" /><img src="" alt="eye" /><img
-                src=""
-                alt="share"
-              />
-            </p>
-          </div>
-          <div id="box">
-            <h3>Heading</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-              <img src="" alt="star" /><img src="" alt="eye" /><img
-                src=""
-                alt="share"
-              />
-            </p>
-          </div>
-          <div id="box">
-            <h3>Heading</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-              <img src="" alt="star" /><img src="" alt="eye" /><img
-                src=""
-                alt="share"
-              />
-            </p>
-          </div>
-          Announcements
-          <div id="box">
-            <h3>Heading</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-              <img src="" alt="star" /><img src="" alt="eye" /><img
-                src=""
-                alt="share"
-              />
-            </p>
-          </div>
-          <div id="rightbox">
-            <h5>Site maintainence</h5>
-            <p>blah blah blah blah blah blah blah</p>
-            <hr />
-            <h5>Community Share Day</h5>
-            <p>blah blah blah blah blah blah blah</p>
-            <hr />
-            <h5>Updated Privacy Policy</h5>
-            <p>blah blah blah blah blah blah blah</p>
-            <hr />
-          </div>
-          <h3>Trending</h3>
-          <div id="rightbox">
-            <p>
-              <img src="" alt="horse" id="profile" />@tegan worldpiece builder
-              <img src="" alt="user" id="profile" />@usertag super cool protejt
-              <img src="" alt="man spider" id="profile" />@kendall life changing
-              app <img src="" alt="pingu" id="profile" />@alex No traffic maker
-            </p>
+          <div id="side-box">
+            <div id="annou-box">
+              <div>
+                <h3>Site maintainence</h3>
+                <p>blah blah blah blah blah blah</p>
+              </div>
+              <div>
+                <h3>Community Share Day</h3>
+                <p>blah blah blah blah blah blah</p>
+              </div>
+              <div>
+                <h3>Updated Privacy Policy</h3>
+                <p>blah blah blah blah blah blah</p>
+              </div>
+            </div>
+            <h3 class="tren-titles">Trending</h3>
+
+            <div id="trenbox">
+              <div>
+                <img
+                  src="./img/Normal_cat_animal_avatar_expression_circle-512.webp"
+                  alt="horse"
+                  class="profile"
+                />
+
+                <div class="tren-rbox">
+                  <p class="tern-at">@tegan</p>
+                  <p class="tren-text">worldpiece builder</p>
+                </div>
+              </div>
+
+              <div>
+                <img
+                  src="./img/Normal_cat_animal_avatar_expression_circle-512.webp"
+                  alt="user"
+                  class="profile"
+                />
+
+                <div class="tren-rbox">
+                  <p class="tern-at">@usertag</p>
+                  <p class="tren-text">super cool project</p>
+                </div>
+              </div>
+
+              <div>
+                <img
+                  src="./img/Normal_cat_animal_avatar_expression_circle-512.webp"
+                  alt="man spider"
+                  class="profile"
+                />
+
+                <div class="tren-rbox">
+                  <p class="tern-at">@kendall</p>
+                  <p class="tren-text">life changing app</p>
+                </div>
+              </div>
+
+              <div>
+                <img
+                  src="./img/Normal_cat_animal_avatar_expression_circle-512.webp"
+                  alt="pingu"
+                  class="profile"
+                />
+
+                <div class="tren-rbox">
+                  <p class="tern-at">@alex</p>
+                  <p class="tren-text">No traffic maker</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

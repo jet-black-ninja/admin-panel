@@ -1,15 +1,20 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Arial', 'sans-serif';
 }
+
+@font-face {
+    font-family: my-Roboto;
+    src: url(./fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
 
 body {
     margin: 0;
     min-height: 100vh;
     width: 100%;
     display: grid;
+    padding: auto;
+    font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Arial', 'sans-serif';
 
 }
 
@@ -20,10 +25,8 @@ body {
 }
 
 #sidebar {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
     background-color: rgb(23, 142, 233);
+    display: grid;
     align-content: start;
     gap: 50px;
     padding-left: 20px;
@@ -31,29 +34,18 @@ body {
     padding-right: 5px;
 }
 
-#sidebar>ul {
+#sidebar>div {
     display: grid;
+    gap: 10px;
     grid-template-columns: auto 100px;
-    list-style-type: none;
     justify-content: start;
     align-items: center;
 
 }
 
-#sidebar li,
+#sidebar p,
 #sidebar h1 {
     color: whitesmoke
-}
-
-ul {
-    display: grid;
-    list-style-type: none;
-
-}
-
-li {
-    padding: 20px;
-
 }
 
 #sideBar>a {
@@ -65,8 +57,30 @@ a {
     text-decoration: none;
 }
 
+
 a:visited {
     color: whitesmoke;
+
+}
+
+#sidebar .logo {
+    filter: invert(98%) sepia(0%) saturate(7214%) hue-rotate(296deg) brightness(121%) contrast(92%);
+
+}
+
+#sidebar #dashsec {
+    margin-left: -6px;
+    gap: 9px;
+}
+
+#dashsec .logo {
+    height: 36px;
+
+
+}
+
+#dash-section h1 {
+    font-size: 25px;
 }
 
 .rightside {
@@ -75,35 +89,39 @@ a:visited {
 }
 
 #header {
-    background-color: white;
-    grid-column: 1/2;
+    max-height: 150px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding-left: 5%;
+    background-color: white;
     padding-right: 5%;
+    padding-left: 5%;
     padding-bottom: 10px;
-    z-index: 1;
-
 }
 
 #search {
     grid-column: 1/2;
-    background-color: whitesmoke;
     display: grid;
+    background-color: white;
     grid-auto-flow: column;
     grid-template-columns: auto 1fr;
-    gap: 10 px;
+    gap: 10px;
     align-items: center;
 }
 
 #search input {
-    border: none;
-    outline: none;
-    height: 25px;
     appearance: none;
+    outline: none;
+    border: none;
     border-radius: 10px;
-    background-color: rgb(207, 207, 207)
+    height: 25px;
+    background-color: rgb(207, 207, 207);
+    padding: 2px 8px;
+    width: 90%;
+}
+
+#search .logo {
+    height: 23px;
 }
 
 #notifysec {
@@ -117,24 +135,222 @@ a:visited {
 
 #namesec {
     align-items: center;
-    grid-column: 1/2;
-    grid-row: 2/3;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: auto 3fr;
     gap: 15px;
-    font-weight: bold;
+    font-weight: bolder;
+}
 
+#notifySec p,
+.projects-title,
+.announcements-title,
+.tren-titles {
+    font-size: 18px;
+    font-weight: 550;
+}
+
+#hi-sec p:nth-child(1) {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+#hi-sec p:nth-child(2) {
+    font-size: 25px;
 }
 
 #buttonsec {
     display: grid;
-    gap: 15px;
     grid-auto-flow: column;
-    grid-column: 2/3;
-    grid-row: 2/3;
     align-content: center;
     justify-content: end;
+    gap: 15px;
+}
+
+#buttonsec button {
+    border-radius: 15px;
+    border: none;
+    font-size: 13px;
+    padding: 6px 8px;
+    background-color: rgb(27, 142, 233);
+    color: whitesmoke;
+    width: 80px;
+    cursor: pointer;
+    font-weight: 550;
+    height: 32px;
+
+}
 
 
+
+
+#main {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 40px 1fr 1fr;
+    padding-left: 15px;
+    gap: 15px;
+}
+
+.projects-title,
+.announcements-title {
+    align-self: end;
+    color: black;
+    margin-bottom: -7px;
+}
+
+#article {
+    grid-row: 2/4;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: 200px;
+    grid-auto-rows: 200px;
+    gap: 20px;
+
+
+}
+
+#box {
+    border-radius: 8px;
+    border-left: rgb(255, 174, 0) 6px solid;
+    height: 200px;
+    padding: 0 15px 0px 15px;
+    display: grid;
+    grid-template-rows: 40px 1fr 40px;
+    background-color: white;
+}
+
+#box #box-head {
+    font-size: 17px;
+    align-self: end;
+    margin: bottom;
+}
+
+#box p {
+    color: rgb(71, 71, 71);
+    font-size: 13px;
+}
+
+
+#side-box {
+    grid-column: 2;
+    display: grid;
+
+    align-content: start;
+}
+
+#side-box h3 {
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+.logo {
+    height: 20px;
+    width: auto;
+    cursor: pointer;
+}
+
+#annou-box,
+#trenbox {
+    width: 270px;
+    border-radius: 8px;
+    padding: 20px;
+    height: 291px;
+    display: grid;
+    background-color: white;
+    overflow-y: hidden
+}
+
+#annou-box {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#annou-box div {
+    padding: 9px;
+    display: grid;
+    align-content: center;
+}
+
+#annou-box div:nth-child(2) {
+    border-top: 1px solid rgb(190, 189, 189);
+    border-bottom: 1px solid rgb(190, 189, 189);
+}
+
+#annou-box h3 {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+#annou-box p,
+tren-text {
+    font-size: 12px;
+    color: rgb(71, 71, 71);
+}
+
+#trenbox {
+    grid-template-rows: auto auto auto auto;
+    gap: 15px;
+
+    align-content: center;
+}
+
+#trenbox>div {
+    align-content: center;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+
+}
+
+
+
+#profile-pic {
+    height: 70px;
+
+}
+
+.tern-at {
+    color: black;
+    font-size: 14px;
+    font-weight: 550;
+
+}
+
+#trend-icon {
+    height: 20px;
+}
+
+.tren-text {
+    font-size: 14px;
+    margin: -5px;
+    font-weight: 400;
+}
+
+#trenbox .tren-rbox {
+    display: grid;
+    align-content: center;
+}
+
+#op-buttons {
+    justify-self: end;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15;
+    margin-right: 10px;
+}
+
+#box,
+#annou-box,
+#trenbox,
+#header {
+    box-shadow: 2px 4px 5px 1px rgb(202 202 202)
+}
+
+.profile {
+    height: 50px;
+    align-self: center;
 }
